@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+
+<!-- Character encoding to properly display text -->
+<meta charset="utf-8">
+
+<!-- Main CSS file that styles the entire extension UI -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Main card container for the extension UI -->
+<div class="card">
+
+<!-- Extension title -->
+<h2>🎧 MoodMuse</h2>
+
+<!-- Subtitle describing the purpose of the extension -->
+<p style="text-align:center;font-size:12px;margin:0;color:#555;">
+Music for every mood
+</p>
+
+<!-- Input field where user types their mood -->
+<input id="moodInput" placeholder="happy, sad, gym, study..." />
+
+<!-- Control buttons for main actions -->
+<div class="controls">
+
+<!-- Button to search a song based on mood -->
+<button id="getSong">Get Song</button>
+
+<!-- Button to get another recommendation for the same mood -->
+<button id="nextSong">Next</button>
+
+<!-- Button to open the recommended video directly on YouTube -->
+<button id="openTab">Open</button>
+
+</div>
+
+<!-- Quick mood buttons for faster interaction -->
+<div class="quickMood">
+
+<!-- These buttons automatically trigger a search for predefined moods -->
+<button class="moodBtn">happy</button>
+<button class="moodBtn">sad</button>
+<button class="moodBtn">study</button>
+<button class="moodBtn">sleepy</button>
+<button class="moodBtn">gym</button>
+
+</div>
+
+<!-- Status message area (loading message, errors, etc.) -->
+<div id="status" class="status"></div>
+
+<!-- Container where the recommended song result will be displayed -->
+<div id="result">
+
+<!-- Thumbnail image of the YouTube video -->
+<img id="thumb">
+
+<!-- Video title and channel information -->
+<div id="meta"></div>
+
+</div>
+
+<!-- Player section where a YouTube link or player gets inserted -->
+<div id="player"></div>
+
+<!-- Decorative equalizer animation to give a music-playing feel -->
+<div class="equalizer">
+
+<!-- Animated bars -->
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+<!-- Feedback section asking user if recommendation helped -->
+<div id="feedback">
+
+<p>Did this help your mood?</p>
+
+<!-- Positive feedback button -->
+<button id="good">👍 Yes</button>
+
+<!-- Negative feedback button -->
+<button id="bad">👎 No</button>
+
+</div>
+
+<!-- Analytics section that displays mood usage statistics -->
+<div id="analytics">
+
+<!-- Chart.js will render the mood usage chart inside this canvas -->
+<canvas id="moodChart"></canvas>
+
+</div>
+
+</div>
+
+<!-- Chart.js included before main scripts (used for rendering charts) -->
+<script src="chart.js"></script>
+
+<!-- JavaScript file responsible for interpreting the user's mood -->
+<script src="moodAI.js"></script>
+
+<!-- Configuration file containing the YouTube API key -->
+<script src="config.js"></script>
+
+<!-- Main JavaScript logic controlling the extension -->
+<script src="popup.js"></script>
+
+</body>
+</html>
+

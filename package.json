@@ -1,0 +1,21 @@
+{
+  "name": "moodmuse-ai-music-recommender",
+  "version": "1.0.0",
+  "description": "A Chrome extension that recommends YouTube music based on user mood using AI-inspired mood interpretation and sentiment detection.",
+  "main": "popup.js",
+  "scripts": {
+    "start": "echo \"Load the extension manually from chrome://extensions\"",
+    "test": "echo \"No automated tests configured yet\""
+  },
+  "keywords": [
+    "chrome-extension",
+    "music-recommender",
+    "mood-ai",
+    "youtube-api",
+    "javascript",
+    "chartjs"
+  ],
+  "author": "Tushti Savarn",
+  "license": "MIT"
+}
+

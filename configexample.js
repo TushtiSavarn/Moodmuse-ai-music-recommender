@@ -1,0 +1,3 @@
+const CONFIG={
+YOUTUBE_API_KEY:"AIzaSyAjX1YrpTuUZB0NnOCKHQfjny7645FsnOw"
+};
