@@ -1,3 +1,4 @@
 const CONFIG={
-YOUTUBE_API_KEY:"AIzaSyAjX1YrpTuUZB0NnOCKHQfjny7645FsnOw"
+YOUTUBE_API_KEY:"Your api key"
+
 };
